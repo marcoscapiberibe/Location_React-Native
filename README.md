@@ -1,6 +1,6 @@
 # Aplicação desenvolvida com React Native
 
-Aplicação desenvolvida em React Native que apresenta a localização do usuário, renderiza a cidade e estado dessa localização e possui um cronomêtro quando efetua o clique no botão "Iniciar Atividade.
+Aplicação desenvolvida em React Native que apresenta a localização do usuário, renderiza a cidade e estado dessa localização e possui um cronômetro quando efetua o clique no botão "Iniciar Atividade.
 
 
 ![Riderize_01](https://user-images.githubusercontent.com/96851717/191362036-54e34c52-f111-478a-b018-4d945c1ed915.jpeg)
