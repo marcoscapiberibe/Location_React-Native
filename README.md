@@ -24,6 +24,9 @@ Este projeto consiste em uma aplicação desenvolvida em React Native que aprese
 
 * Javascript
 * React Native
+* Modalize
+* MapView
+* Expo-location
 * NPM
 
 
