@@ -22,7 +22,7 @@ Este projeto consiste em uma aplicação desenvolvida em React Native que aprese
 
 # Tecnologias utilizadas
 
-* Javascript
+* JavaScript
 * React Native
 * Modalize
 * MapView
