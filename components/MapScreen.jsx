@@ -35,7 +35,7 @@ export default function MapScreen() {
         })
     };
 
-    // console.log(getMyLocation);
+    console.log(getMyLocation);
 
 
 

@@ -17,10 +17,12 @@ export default function FirstScreen() {
         'Espere, estamos buscando a sua localização...'
     );
 
+
     useEffect(() => {
         CheckIfLocationEnabled();
         GetCurrentLocation();
     }, []);
+
 
 
     const CheckIfLocationEnabled = async () => {
@@ -64,28 +66,25 @@ export default function FirstScreen() {
                 let address = `${item.subregion}/${item.region}`;
 
                 setDisplayCurrentAddress(address);
-                // console.log(setDisplayCurrentAddress);
-
-                // if (address.length > 0) {
-                //     onPress = () => navigation.navigate('Pedal', { item: address });
-                //     contador
-
-
-                //     setTimeout(() => {
-                //         navigation.navigate('Pedal', { item: address });
-                //     }, 2000);
-                // }
             }
         }
     };
 
     console.log(displayCurrentAddress);
 
+
     const modalRef = useRef(null);
 
     function onOpen() {
         modalRef.current?.open();
     }
+
+
+    const stopAlert = () =>
+        alert(
+            "Você pedalou por 00:00:02!",
+            "00:00:02",
+        );
 
 
     return (<>
@@ -132,19 +131,16 @@ export default function FirstScreen() {
                             <Text style={css.modal__div__speed__second__text}>31.1</Text>
                         </View>
                     </View>
-
-                    <TouchableOpacity style={css.modal__view}>
+                    <TouchableOpacity
+                        style={css.modal__view}
+                        title={"Stop Alert"}
+                        onPress={stopAlert} >
                         <View style={css.modal__button}>
                             <Text style={css.modal__button__text}>Parar</Text>
                         </View>
                     </TouchableOpacity>
-
                 </View>
-
             </Modalize>
-
-
-
         </SafeAreaView>
     </>
     )
